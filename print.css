@@ -1,0 +1,28 @@
+html {
+    font-size: 12px;
+}
+
+#pictureOfMeContainer {
+    -webkit-print-color-adjust: exact;
+}
+
+header {
+    box-shadow: none;
+    border-bottom: 2px solid black;
+}
+
+#titleBox {
+    flex-direction: row;
+}
+
+#personalInfo footer {
+    justify-content: right;
+}
+
+#personalInfo address, h1 {
+    text-align: right;
+}
+
+article {
+    box-shadow: none;
+}
