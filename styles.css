@@ -23,7 +23,7 @@ header {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    background-image: url(assets/images/pictures/me.jpg);
+    background-image: url(assets/images/pictures/me-profile.jpg);
     background-size: cover;
 }
 
