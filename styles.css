@@ -176,12 +176,27 @@ article p a {
 
 /* CHARTS */
 
-.flex-wrapper{
+.skillCard{
+    width: 16rem;
+    height: 11.25rem;
+    padding: .25rem;
+    border-radius: 4px;
+    box-sizing: content-box;
+    overflow: hidden;
     display: flex;
-    flex-flow: row nowrap;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #555555;
 }
 
-.single-chart {
+.chartContaine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.donutChart {
     width: 33%;
     justify-content: space-around;
 }
@@ -215,9 +230,25 @@ article p a {
     stroke: #ff9f00;
 }
 
+.circular-chart.green .circle-bar {
+    stroke: #4cc790;
+}
+
+.circular-chart.blue .circle-bar {
+    stroke: #3c9ee5;
+}
+
+.circular-chart.red .circle-bar {
+    stroke: #cc4f4f;
+}
+
 .percentage {
     fill: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.5rem;
     text-anchor: middle;
+}
+
+.testImage {
+    width: 30%;
 }
