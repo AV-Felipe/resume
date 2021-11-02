@@ -173,3 +173,51 @@ article p a {
     filter: drop-shadow(0 0 0.5rem #555577);
     transition: filter 0.75s;
 }
+
+/* CHARTS */
+
+.flex-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.single-chart {
+    width: 33%;
+    justify-content: space-around;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #cccccc;
+    stroke-width: 3.8;
+}
+
+.circle-bar {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.orange .circle-bar {
+    stroke: #ff9f00;
+}
+
+.percentage {
+    fill: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.5rem;
+    text-anchor: middle;
+}
