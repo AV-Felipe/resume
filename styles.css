@@ -128,7 +128,7 @@ article p a {
 
 /* CARD LIST */
 
-#projectsList {
+.projectsList {
     list-style: none;
     padding-left: 0;
     display: flex;
@@ -137,7 +137,7 @@ article p a {
     row-gap: 0.6rem;
 }
 @media (max-width: 610px){
-    #projectsList {
+    .projectsList {
         justify-content: center;
     }
 }
@@ -166,7 +166,7 @@ article p a {
 .projectDescription, .projectTitle {
     text-align: center;
 }
-#projectsList a {
+.projectsList a {
     text-decoration: none;
 }
 .projectCard:hover {/*seletor de uma pseudo classe (:hover seleciona um elemento quando o mouse está passando sobre ele)*/
@@ -178,34 +178,34 @@ article p a {
 
 .skillCard{
     width: 16rem;
-    height: 11.25rem;
+    height: 16rem;
     padding: .25rem;
     border-radius: 4px;
+    background-color: #ffffff;
     box-sizing: content-box;
     overflow: hidden;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     border: 2px solid #555555;
+    filter: drop-shadow(0 0 0.15rem #555577);
 }
-
-.chartContaine {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.skillCard:hover {/*seletor de uma pseudo classe (:hover seleciona um elemento quando o mouse está passando sobre ele)*/
+    filter: drop-shadow(0 0 0.5rem #555577);
+    transition: filter 0.75s;
 }
 
 .donutChart {
-    width: 33%;
-    justify-content: space-around;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
 }
 
 .circular-chart {
-    display: block;
-    margin: 10px auto;
-    max-width: 80%;
-    max-height: 250px;
+    max-width: 50%;
 }
 
 .circle-bg {
