@@ -11,6 +11,17 @@ header {
     border-bottom: 2px solid black;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+footer a::before {
+    content: " (" attr(href) ") ";
+}
+
 #titleBox {
     flex-direction: row;
 }
@@ -25,4 +36,17 @@ header {
 
 article {
     box-shadow: none;
+}
+
+.donutChart {
+    display: none;
+}
+
+.skillCard {
+    height: auto;
+}
+
+.skillCard .projectTitle {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
